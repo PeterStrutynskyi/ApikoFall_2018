@@ -10,7 +10,7 @@ const Filters = ({
 }) => {
 
   const disabled = filterType => {
-    return 'btn-space btn '+((filterType === currentFilter) ?'btn-primary':'default');
+    return 'btn-space btn ' + ((filterType === currentFilter) ? 'btn-primary' : 'default');
   };
 
 
