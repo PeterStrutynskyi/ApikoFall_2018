@@ -36,6 +36,31 @@ class TodoPage extends Component {
     }
   }
 
+  componentDidMount () {
+    const { location } = this.props;
+
+    let searchParams = queryString.parse(location.search);
+
+    if (searchParams.filter) {
+      for (let fl in FILTERS) {
+        if (searchParams.filter.toUpperCase() === FILTERS[fl]) {
+          this.setState({
+            filter: searchParams.filter.toUpperCase()
+          });
+        }
+      }
+    }
+
+    window.scrollTo(0, 0);
+  }
+
+
+  componentDidUpdate() {
+    const { todos } = this.state;
+
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }
+
   onChangeInput(newTodo) {
     this.setState({ newTodo })
   }
@@ -93,35 +118,6 @@ class TodoPage extends Component {
       case FILTERS.SHOW_INCOMPLETED: return todos.filter(todo => !todo.isCompleted);
     }
   }
-
-
-  componentDidMount () {
-    const { location } = this.props;
-
-    let searchParams = queryString.parse(location.search);
-
-    if (searchParams.filter) {
-      for (let fl in FILTERS) {
-        if (searchParams.filter.toUpperCase() === FILTERS[fl]) {
-          this.setState({
-            filter: searchParams.filter.toUpperCase()
-          });
-        }
-      }
-    }
-
-    window.scrollTo(0, 0);
-  }
-
-
-  componentDidUpdate() {
-    const { todos } = this.state;
-
-    localStorage.setItem("todos", JSON.stringify(todos));
-
-
-  }
-
 
   render() {
     const { newTodo, todos, filter } = this.state;
