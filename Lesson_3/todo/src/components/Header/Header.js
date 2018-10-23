@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './header.css'
+import './Header.css'
 
 const Header = ({ text }) => (
     <div className = "page-header text-center custom-header">

@@ -2,7 +2,7 @@ import React from 'react';
 import PT from "prop-types";
 import { FILTERS } from '../../constants/filterTypes'
 
-import './filters.css';
+import './Filters.css';
 
 const Filters = ({
     onFilterCheck,

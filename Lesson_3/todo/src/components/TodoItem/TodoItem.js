@@ -2,7 +2,7 @@ import React from 'react';
 import PT from "prop-types";
 
 import classNames from 'classnames/bind';
-import styles from './toDoItem.css';
+import styles from './ToDoItem.css';
 
 let cx = classNames.bind(styles);
 
@@ -15,11 +15,10 @@ const TodoItem = ({
     onRemoveClick,
 }) => {
 
-
   const className = cx('list-group-item', {'list-group-item-warning': !isCompleted,  'list-group-item-success': isCompleted });
 
   return(
-    <li className={className}>
+    <li key={ id } className={className}>
       <div className="row vertical-align-center">
 
         <div className="col-md-10">
