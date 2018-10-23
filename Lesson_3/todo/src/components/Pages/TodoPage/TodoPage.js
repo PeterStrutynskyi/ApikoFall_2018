@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import * as queryString from "query-string";
 
-import { FILTERS } from "../../../consts/filterTypes";
+import { FILTERS } from "../../../constants/filterTypes";
 import { createTodo } from "../../../utils/creators";
 
 import AddTodo from "../../AddTodo/AddTodo";
@@ -100,6 +100,7 @@ class TodoPage extends Component {
       }
     }
 
+    window.scrollTo(0, 0);
   }
 
 
@@ -107,6 +108,8 @@ class TodoPage extends Component {
     const { todos } = this.state;
 
     localStorage.setItem("todos", JSON.stringify(todos));
+
+
   }
 
 
