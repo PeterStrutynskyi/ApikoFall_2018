@@ -29,7 +29,8 @@ class TodoPage extends Component {
 
   getStorageData () {
     try {
-      return JSON.parse(localStorage.getItem("todos"));
+      let data = JSON.parse(localStorage.getItem("todos"));
+      return data;
     }
     catch (e) {
       return [];
