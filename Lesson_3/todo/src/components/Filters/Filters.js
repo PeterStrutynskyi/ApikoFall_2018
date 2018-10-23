@@ -1,6 +1,6 @@
 import React from 'react';
 import PT from "prop-types";
-import { FILTERS } from '../../consts/filterTypes'
+import { FILTERS } from '../../constants/filterTypes'
 
 import './filters.css';
 

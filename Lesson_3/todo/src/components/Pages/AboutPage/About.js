@@ -11,7 +11,6 @@ export const About = () => (
 
 const AboutPage = styled.h3`
     display: block;
-    float: center;
-    font-size: 25;
+    font-size: 25px;
     text-align: center;
 `;

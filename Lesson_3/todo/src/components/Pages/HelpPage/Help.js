@@ -10,7 +10,6 @@ export const Help = () => (
 
 const HelpPage = styled.h3`
     display: block;
-    float: center;
-    font-size: 25;
+    font-size: 25px;
     text-align: center;
 `;
