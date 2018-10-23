@@ -1,0 +1,5 @@
+export const FILTERS = {
+    SHOW_ALL: 'ALL',
+    SHOW_INCOMPLETED: 'INCOMPLETED',
+    SHOW_COMPLETED: 'COMPLETED'
+};

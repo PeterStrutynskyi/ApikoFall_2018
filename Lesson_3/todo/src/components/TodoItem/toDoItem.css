@@ -1,0 +1,14 @@
+.btn-space {
+    margin: 5px;
+}
+
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.vertical-align-center {
+    display: flex;
+    align-items: center;
+}
