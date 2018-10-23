@@ -15,7 +15,7 @@ class TodoPage extends Component {
 
     this.state = {
       newTodo: '',
-      todos: JSON.parse(localStorage.getItem("todos")) || [],
+      todos: this.getStorageData(),
       filter: FILTERS.SHOW_ALL
     };
 
@@ -24,6 +24,16 @@ class TodoPage extends Component {
     this.handleTodoClick = this.handleTodoClick.bind(this);
     this.handleTodoRemoveClick = this.handleTodoRemoveClick.bind(this);
     this.handleFilterCheck = this.handleFilterCheck.bind(this);
+    this.getStorageData = this.getStorageData.bind(this);
+  }
+
+  getStorageData () {
+    try {
+      return JSON.parse(localStorage.getItem("todos"));
+    }
+    catch (e) {
+      return [];
+    }
   }
 
   onChangeInput(newTodo) {
