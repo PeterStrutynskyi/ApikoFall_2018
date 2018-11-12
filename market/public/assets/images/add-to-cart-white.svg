@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>add-to-cart-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="add-to-cart-white" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M13,16 C13,17.104 13.894,18 15,18 C16.104,18 17,17.104 17,16 C17,14.894 16.104,14 15,14 C13.894,14 13,14.894 13,16 Z M3,16 C3,17.104 3.895,18 5,18 C6.103,18 7,17.104 7,16 C7,14.894 6.103,14 5,14 C3.895,14 3,14.894 3,16 Z M6.547,11.172 L17.615,8.01 C17.826,7.949 18,7.721 18,7.5 L18,2 L4,2 L4,0.4 C4,0.18 3.819,0 3.601,0 L0.399,0 C0.18,0 0,0.18 0,0.4 L0,2 L2,2 L3.91,10.957 L4,11.9 L4,13.549 C4,13.768 4.18,13.949 4.4,13.949 L17.6,13.949 C17.82,13.949 18,13.767 18,13.549 L18,12 L6.752,12 C5.602,12 5.578,11.449 6.547,11.172 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
